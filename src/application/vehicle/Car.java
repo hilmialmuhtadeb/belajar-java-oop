@@ -9,6 +9,15 @@ public class Car implements Vehicle {
         System.out.println("Brum brum...");
     }
 
+    public void mentionSpecs() {
+        System.out.println("Brand: " + this.brand + ". Wheels: " + this.wheel);
+    }
+
+    Car(String brand, int wheel) {
+        this.brand = brand;
+        this.wheel = wheel;
+    }
+
     public String getBrand() {
         return brand;
     }

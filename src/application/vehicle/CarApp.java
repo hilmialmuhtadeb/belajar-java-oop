@@ -3,8 +3,12 @@ package application.vehicle;
 public class CarApp {
     public static void main(String[] args) {
 
-        Vehicle avanza = new Car();
+        Car avanza = new Car("Toyota", 4);
         avanza.startEngine();
+        avanza.mentionSpecs();
+
+        avanza.setWheel(3);
+        avanza.mentionSpecs();
 
     }
 }
